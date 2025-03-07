@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Weather and Motivational Quotes Application">
+  <title>WeatherQuote</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+    
+    <!-- Navigation Bar -->
+    <nav class="top-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-brand">WeatherQuote</div>
+      <ul class="nav-menu">
+        <li><a href="#">Weather</a></li>
+        <li><a href="#">Motivation</a></li>
+        <li><a href="#">Inspiration</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <button class="nav-button">Get Daily Weather</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" role="banner">
+      <div class="hero-content">
+        <h1>Stay Positive with Daily Quotes</h1>
+        <p>Receive daily weather updates and motivational quotes.</p>
+        <button class="hero-btn">Discover</button>
+      </div>
+      <img src="/Tugas ARC_DAY3 Duplikat/landing.png" alt="Landing illustration" class="hero-image">
+    </header>
+
+    <!-- Highlight Section -->
+    <section class="highlight-section" aria-label="Highlight quotes">
+      <div class="highlight-card">
+        <h3>Positive Vibes</h3>
+        <p>Refresh your mind daily with our motivational quotes.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Good Night</h3>
+        <p>End your day on a positive note with calming quotes.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Stay Calm</h3>
+        <p>Keep your spirit up with daily curated quotes.</p>
+      </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community-section" aria-label="Community">
+      <h2>Join the WeatherQuote Community and Connect with Others</h2>
+      <div class="community-cards">
+        <div class="community-card">
+          <p>Feeling inspired and uplifted</p>
+          <span>@PositiveSoul</span>
+        </div>
+        <div class="community-card">
+          <p>This website improved my day. Highly recommended!</p>
+          <span>@DailySpark</span>
+        </div>
+        <div class="community-card">
+          <p>Motivation is the key</p>
+          <span>@KeepGoing</span>
+        </div>
+        <div class="community-card">
+          <p>Stay driven, live positively</p>
+          <span>@BrightSide</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content (Local Quotes & Weather) -->
+    <main role="main">
+      <section class="local-api" aria-labelledby="quotes-heading">
+        <h2 id="quotes-heading">Local Quotes</h2>
+        <div id="quotes" role="region" aria-live="polite"></div>
+        <button id="refreshBtn" aria-label="Refresh quote">Refresh Quote</button>
+      </section>
+
+      <section class="public-api" aria-labelledby="weather-heading">
+        <h2 id="weather-heading">Weather in Jakarta</h2>
+        <div id="weather" role="region" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section" role="contentinfo">
+      <p class="footer-brand">WeatherQuote</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">WeatherQuote</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">
+        &copy; 2023 WeatherQuote. All rights reserved.
+      </p>
+    </footer>
+
+  </div> <!-- End page-wrapper -->
+
+  <script src="script.js"></script>
+</body>
+</html>
